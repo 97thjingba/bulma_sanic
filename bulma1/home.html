@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>来玩</title>
     <!-- <link rel="stylesheet" href="debug.css"> -->
-    <link rel="icon" href="img/laiwan_icon.png" type="image/png" />
-    <script src="css/jquery-3.3.1.min.js"></script>
-    <link rel="stylesheet" href="css/bulma.min.css">
+    <link rel="icon" href="/static/img/laiwan_icon.png" type="image/png" />
+    <script src="/static/css/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="/static/css/bulma.min.css">
     <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
     <style>
         body{
-            background: url(img/bg.jpg)
+            background: url(/static/img/bg.jpg)
         }
 
         .center {
@@ -26,104 +26,102 @@
             margin-right: 5%;
         }
 
-        @media(min-width:768px) {
-            #chicun {
-                max-width: 300px;
-            }
-        }
         .menu{
             margin-top:20%;
             color:azure;
         }
+
         .menu:hover{
             text-decoration: underline; 
             color:white;        
             
         }
+
         .navbar-item img{
             max-height: 4rem;
         }
-        .has-background-black-ter{
-                
+
+        @media(min-width:768px) {
+            #chicun {
+                max-width: 300px;
+            }
         }
-
-       
-
-        
     </style>
     <script>
-    $(document).ready(function(){
+        $(document).ready(function(){
             $(".navbar-burger").click(function(){
-               $(this).toggleClass("is-active")
-               $(".navbar-menu").toggleClass("is-active")
-            }); 
-});
-    
+                $(this).toggleClass("is-active")
+                $(".navbar-menu").toggleClass("is-active")
+    }); 
+                
+            var pingmu =  $(window).width()           
+                if(pingmu<769){
+                    $(".hero-head").addClass("has-background-black-ter")
+                    if($(".hero-head").isClass("has-background-black-ter")){
+                        window.location.reload()
+                }      
+            }
 
+                if(pingmu>768){
+                    if($(".hero-head").isClass("has-background-black-ter")){
+                        $(".hero-head").removeClass("has-background-black-ter")
+                        window.location.reload()
+                }
+            }       
+    });
     </script>
-  
-
 </head>
 
-<body>
-    
+<body>  
     <section class="hero is-fullheight">
-        <div class="hero-head has-background-black-ter is-small">
+        <div class="hero-head  is-small">
                 <nav class="navbar">
                         <div class="container"> 
                                 <div class="navbar-brand">
                                     <a class="navbar-item  center">
-                                        <img src="img/logo.png"  alt="Logo">
+                                        <img src="/static/img/logo.png"  alt="Logo">
                                     </a>
-                                <span class="navbar-burger burger has-text-white ">
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                            
-                                </span>    
+                                    <span class="navbar-burger burger has-text-white ">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>               
+                                    </span>    
                                 </div>
-                        <div class="navbar-menu">
-                            <div class="navbar-end">
-                                
-                                <span class="navbar-item center">
-                                        <a class="button is-black is-inverted">        
-
-                                          <span class="subtitle fas fa-home">Home</span>
-
-                                        </a>
-                                </span>
-                                <span class="navbar-item center">
-                                        <a class="button is-black is-inverted">                           
-                                          <span class="subtitle">Glossary</span>     
-                                        </a>
-                                </span>
-                                
-                                <span class="navbar-item center">
-                                        <a class="button is-black is-inverted">                           
-                                          <span class="subtitle">About Us</span>     
-                                        </a>
-                                </span>
-                            </div>
-                          </div>
+                                <div class="navbar-menu">
+                                    <div class="navbar-end">                 
+                                        <span class="navbar-item center">
+                                            <a class="button is-black is-inverted">        
+                                                <span class="subtitle fas fa-home">Home</span>
+                                            </a>
+                                        </span>
+                                        <span class="navbar-item center">
+                                            <a class="button is-black is-inverted">                           
+                                                <span class="subtitle">Glossary</span>     
+                                            </a>
+                                        </span>    
+                                        <span class="navbar-item center">
+                                            <a class="button is-black is-inverted">                           
+                                                <span class="subtitle">About Us</span>     
+                                            </a>
+                                        </span>
+                                    </div>
+                                </div>
                         </div>
                 </nav>
-                  
-
         </div>
-
-       
+  
         <div class="hero-body">
             <div class="container">
                 <div class="columns is-mobile">
                     <div class="column">
                         <p class="center title has-text-white">LaiWan</p>
                         <figure class="center">
-                            <img src="img/iphonex.png" id="chicun">
+                            <img src="/static/img/iphonex.png" id="chicun">
                         </figure>
                     </div>
                     <div class="column is-1">
                         <figure class="center">
-                            <img src="img/divided.png">
+                            <img src="/static/img/divided.png">
                         </figure>
                     </div>
                     <div class="column">
@@ -131,20 +129,20 @@
                         <p class="center subtitle has-text-white is-size-7-mobile">Play With Your Friends</p>
                         <div class="column">
                             <figure class="center">
-                                <img src="img/erweima.png">
+                                <img src="/static/img/erweima.png">
                             </figure>
                         </div>
                         <div class="column center">
                             <figure class="b">
-                                    <img src="img/apple.png">
+                                    <img src="/static/img/apple.png">
                             </figure>
                             <figure class="b">
-                                    <img src="img/android.png">
+                                    <img src="/static/img/android.png">
                             </figure>
                         </div>
                         <div class="column">
                             <figure class="center">
-                                    <img src="img/google.png">
+                                    <img src="/static/img/google.png">
                             </figure>
                         </div>
                     </div>
