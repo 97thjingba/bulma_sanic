@@ -7,9 +7,10 @@
     <title>来玩</title>
     <!-- <link rel="stylesheet" href="debug.css"> -->
     <link rel="icon" href="img/laiwan_icon.png" type="image/png" />
+    <script src="css/jquery-3.3.1.min.js"></script>
     <link rel="stylesheet" href="css/bulma.min.css">
     <style>
-        .hero {
+        body{
             background: url(img/bg.jpg)
         }
 
@@ -38,47 +39,62 @@
             color:white;        
             
         }
+        .navbar-item img{
+            max-height: 4rem;
+        }
     </style>
+    <script>
+            $(document).ready(function(){
+            $(".navbar-burger").click(function(){
+               $(this).toggleClass("is-active")
+               $(".navbar-menu").toggleClass("is-active")
+            });          
+});
+
+    </script>
+  
+
 </head>
 
 <body>
     <section class="hero is-fullheight">
         <div class="hero-head">
-                <div class="container">
-                    <div class="columns">
-                        <div class="column">            
-                            <figure class="">
-                                <img src="img/logo.png" width="12%" height="30%">   
-                            </figure>
-                        </div>
-                    
-                        
-                        <div class="column">
-                            <div class="columns">
-                                <div class="column is-2">
-                                    <a class="center">
-                                        <p class="menu is-size-4 ">首页</p>
+                <nav class="navbar ">
+                        <div class="container"> 
+                                <div class="navbar-brand">
+                                    <a class="navbar-item is-size-4">
+                                        <img src="img/logo.png"  alt="Logo">
                                     </a>
+                                <span class="navbar-burger burger has-text-white  ">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                </span>    
                                 </div>
-                                <div class="column is-2">
-                                        <a class="">
-                                            <p class="menu is-size-4">术语表</p>
+                          <div class="navbar-menu">
+                            <div class="navbar-end">
+                                <a class="navbar-item is-size-4 center ">Home</a>
+                                <a class="navbar-item is-size-4 center">Glossary</a>
+                                <span class="navbar-item center">
+                                        <a class="button is-primary is-inverted">                           
+                                          <span>About Us</span>     
                                         </a>
-                                </div>
-                                <div class="column">
-
-                                </div>
+                                </span>
                             </div>
+                          </div>
                         </div>
+                </nav>
+            
 
-                </div>
-            </div>
+                
+
         </div>
+       
         <div class="hero-body">
             <div class="container">
                 <div class="columns is-mobile">
                     <div class="column">
-                        <p class="center title has-text-white">来玩</p>
+                        <p class="center title has-text-white">LaiWan</p>
                         <figure class="center">
                             <img src="img/iphonex.png" id="chicun">
                         </figure>
@@ -89,8 +105,8 @@
                         </figure>
                     </div>
                     <div class="column">
-                        <p class="center title has-text-white is-size-7-mobile">斗地主 &nbsp;&nbsp;&nbsp;德州扑克</p>
-                        <p class="center subtitle has-text-white is-size-7-mobile">和朋友一起玩</p>
+                        <p class="center title has-text-white is-size-7-mobile">DouDiZhu &nbsp;&nbsp;&nbsp;DeZhouPuKe</p>
+                        <p class="center subtitle has-text-white is-size-7-mobile">Play With Your Friends</p>
                         <div class="column">
                             <figure class="center">
                                 <img src="img/erweima.png">
