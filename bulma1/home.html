@@ -9,6 +9,7 @@
     <link rel="icon" href="img/laiwan_icon.png" type="image/png" />
     <script src="css/jquery-3.3.1.min.js"></script>
     <link rel="stylesheet" href="css/bulma.min.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
     <style>
         body{
             background: url(img/bg.jpg)
@@ -42,14 +43,22 @@
         .navbar-item img{
             max-height: 4rem;
         }
+        .has-background-black-ter{
+                
+        }
+
+       
+
+        
     </style>
     <script>
-            $(document).ready(function(){
+    $(document).ready(function(){
             $(".navbar-burger").click(function(){
                $(this).toggleClass("is-active")
                $(".navbar-menu").toggleClass("is-active")
-            });          
+            }); 
 });
+    
 
     </script>
   
@@ -57,38 +66,51 @@
 </head>
 
 <body>
+    
     <section class="hero is-fullheight">
-        <div class="hero-head">
-                <nav class="navbar ">
+        <div class="hero-head has-background-black-ter is-small">
+                <nav class="navbar">
                         <div class="container"> 
                                 <div class="navbar-brand">
-                                    <a class="navbar-item is-size-4">
+                                    <a class="navbar-item  center">
                                         <img src="img/logo.png"  alt="Logo">
                                     </a>
-                                <span class="navbar-burger burger has-text-white  ">
+                                <span class="navbar-burger burger has-text-white ">
                                             <span></span>
                                             <span></span>
                                             <span></span>
+                                            
                                 </span>    
                                 </div>
-                          <div class="navbar-menu">
+                        <div class="navbar-menu">
                             <div class="navbar-end">
-                                <a class="navbar-item is-size-4 center ">Home</a>
-                                <a class="navbar-item is-size-4 center">Glossary</a>
+                                
                                 <span class="navbar-item center">
-                                        <a class="button is-primary is-inverted">                           
-                                          <span>About Us</span>     
+                                        <a class="button is-black is-inverted">        
+
+                                          <span class="subtitle fas fa-home">Home</span>
+
+                                        </a>
+                                </span>
+                                <span class="navbar-item center">
+                                        <a class="button is-black is-inverted">                           
+                                          <span class="subtitle">Glossary</span>     
+                                        </a>
+                                </span>
+                                
+                                <span class="navbar-item center">
+                                        <a class="button is-black is-inverted">                           
+                                          <span class="subtitle">About Us</span>     
                                         </a>
                                 </span>
                             </div>
                           </div>
                         </div>
                 </nav>
-            
-
-                
+                  
 
         </div>
+
        
         <div class="hero-body">
             <div class="container">
