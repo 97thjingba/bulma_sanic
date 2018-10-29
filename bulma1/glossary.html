@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>来玩</title>
+    <!-- <link rel="stylesheet" href="debug.css"> -->
+    <script src="css/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="css/bulma.min.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <style>
+
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #top_bg{
+            background: url(img/bg.png);
+        }
+
+        #logo_top{
+            max-height: 2rem;   
+        }
+
+        #footer{
+            background: url(img/bg.jpg);
+        }
+
+        #logo_footer{
+            max-height: 3rem;
+            margin-bottom:1rem;
+        }
+
+        #content-top{
+            margin-top:2rem;
+        }
+        @media(max-width:768px){
+            #svg{
+                display: none
+            }
+
+            #footer{
+                max-height:16rem;
+            }
+
+            #search-pc{
+                display: none;
+            }
+        }
+
+        @media(min-width:769px){
+            #search-ph{
+                display: none
+            }
+        }
+        
+    </style>
+    <script>
+        $(document).ready(function(){
+            $(".navbar-burger").click(function(){
+                $(this).toggleClass("is-active")
+                $(".navbar-menu").toggleClass("is-active")
+        });
+})   
+    </script>
+</head>
+
+<body >  
+    <section class="hero  is-small">
+        <div class="hero-head">
+            <div class="container">
+                <nav class="navbar is-fixed-top" id="top_bg">
+                    <div class="container">
+                        <div class="navbar-brand" id="">
+                            <a class="navbar-item" href="#">
+                                <img src="img/logo.png" id="logo_top">
+                            </a>
+                            <a class="center" id="search-ph">
+                                <input class="input is-rounded " type="text" placeholder="搜索你想要的"> 
+                            </a>
+                            <a role="button" class="navbar-burger burger" >
+                                <span  class="has-text-white"></span>
+                                <span  class="has-text-white"></span>
+                                <span  class="has-text-white"></span>
+                            </a>
+                        </div>
+                        <div class="navbar-menu">
+                            <div class="navbar-start">
+                                <div class="navbar-item has-dropdown is-hoverable">
+                                        <a class="navbar-link">
+                                            <b class="has-text-info">来玩</b>
+                                        </a>
+                                    <div class="navbar-dropdown">
+                                        <a class="navbar-item">
+                                            斗地主
+                                        </a>
+                                        <a class="navbar-item">
+                                            德州扑克
+                                        </a>
+                                        <hr class="navbar-divider">
+                                        <a class="navbar-item">
+                                            炸金花
+                                        </a>                                               
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="navbar-end">
+                                <div class="navbar-item">
+                                    <a class="navbar-item has-text-info"><b>首页</b></a>
+                                    <a class="navbar-item has-text-info"><b>术语表</b></a>
+                                    <div class="buttons">
+                                        <a class="button is-primary"><strong>About us</strong></a>
+                                        <a class="button is-light">contact</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav> 
+            </div>
+        </div>
+    </section>
+    <section class="hero" id="hero-body">
+        <div class="hero-body">
+            <div class="container" id="content-top">
+                <div class="title center">德州扑克术语</div>
+                <article class="message">
+                    <div class="message-body">
+                            <b>术语的发明与学习是任何一门学科进行研究和讨论必不可少的环节。不能理解术语并使用术语交流将成为玩家学习之路上的重大阻碍。<br/>
+                            德州扑克游戏是一个“舶来游戏”，在海外已经有漫长的游戏和策略历史，在交流与研究的漫漫长路上不光诞生了大量专业术语，
+                            甚至大量俗俚语深深嵌入了美国人民的日常表达。<br/>   
+                            虽然对于国内玩家来说，扑克文化尚为陌生，策略环境也尚在早期。但能掌握学习术语，必将是你技术进步和了解扑克文化的重要保障。
+                            </b>
+                    </div>
+                </article>    
+            </div>
+        </div>
+    </section>
+    <section class="hero is-light" id="search-pc">
+        <div class="hero-head is-light">
+            <div class="container">        
+                <input class="input is-rounded" type="text" placeholder="搜索你想要的">              
+            </div>
+        </div>
+    </section>
+    <section>
+            <div class="hero-body">
+                    <div class="container">
+                        <div class="title center">德州扑克术语</div>
+                            <article class="message">
+                                <div class="message-body">
+                                        <b>术语的发明与学习是任何一门学科进行研究和讨论必不可少的环节。不能理解术语并使用术语交流将成为玩家学习之路上的重大阻碍。<br/>
+                                        德州扑克游戏是一个“舶来游戏”，在海外已经有漫长的游戏和策略历史，在交流与研究的漫漫长路上不光诞生了大量专业术语，
+                                        甚至大量俗俚语深深嵌入了美国人民的日常表达。<br/>   
+                                        虽然对于国内玩家来说，扑克文化尚为陌生，策略环境也尚在早期。但能掌握学习术语，必将是你技术进步和了解扑克文化的重要保障。
+                                        </b>
+                                </div>
+                            </article>    
+                    </div>
+                </div>
+        
+    </section>
+    <section>
+            <div class="hero-body">
+                    <div class="container">
+                        <div class="title center">德州扑克术语</div>
+                            <article class="message">
+                                <div class="message-body">
+                                        <b>术语的发明与学习是任何一门学科进行研究和讨论必不可少的环节。不能理解术语并使用术语交流将成为玩家学习之路上的重大阻碍。<br/>
+                                        德州扑克游戏是一个“舶来游戏”，在海外已经有漫长的游戏和策略历史，在交流与研究的漫漫长路上不光诞生了大量专业术语，
+                                        甚至大量俗俚语深深嵌入了美国人民的日常表达。<br/>   
+                                        虽然对于国内玩家来说，扑克文化尚为陌生，策略环境也尚在早期。但能掌握学习术语，必将是你技术进步和了解扑克文化的重要保障。
+                                        </b>
+                                </div>
+                            </article>    
+                    </div>
+                </div>
+        
+    </section>
+    <section>
+            <div class="hero-body">
+                    <div class="container">
+                        <div class="title center">德州扑克术语</div>
+                            <article class="message">
+                                <div class="message-body">
+                                        <b>术语的发明与学习是任何一门学科进行研究和讨论必不可少的环节。不能理解术语并使用术语交流将成为玩家学习之路上的重大阻碍。<br/>
+                                        德州扑克游戏是一个“舶来游戏”，在海外已经有漫长的游戏和策略历史，在交流与研究的漫漫长路上不光诞生了大量专业术语，
+                                        甚至大量俗俚语深深嵌入了美国人民的日常表达。<br/>   
+                                        虽然对于国内玩家来说，扑克文化尚为陌生，策略环境也尚在早期。但能掌握学习术语，必将是你技术进步和了解扑克文化的重要保障。
+                                        </b>
+                                </div>
+                            </article>    
+                    </div>
+                </div>
+        
+    </section>
+    <footer class="footer" id="footer">
+        <div class="content has-text-centered">
+            <img src="img/logo.png" id="logo_footer">
+            <p class=" is-size-7-mobile has-text-white">QQ:1079937489</p>
+            <p class=" is-size-7-mobile has-text-white">微博:123456789-1</p>
+            <p class=" is-size-7-mobile has-text-white">微信:sanic&cassandra</p> 
+            <p class=" is-size-7-mobile ">2018©LaiWan</p> 
+        </div>
+        <div class="sbs has-text-centered" id="svg">
+                <a href="#" target="_self"  class="has-text-weight-semibold">
+                    <svg aria-hidden="true" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" size="lg" class="icon svg-inline--fa fa-twitter fa-w-16 fa-lg" data-v-253e0d12=""><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" class=""></path></svg> 
+                    <span class="is-size-6" >Twitter</span>
+                </a>
+                <a href="#" target="_self"  class="has-text-weight-semibold" style="margin-left:10rem">
+                    <svg aria-hidden="true" data-prefix="fab" data-icon="facebook-f" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 264 512" size="lg" class="icon svg-inline--fa fa-facebook-f fa-w-9 fa-lg" data-v-253e0d12=""><path fill="currentColor" d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229" class=""></path></svg> 
+                    <span class="is-size-6" >Facebook</span>
+                </a>
+                <a href="#" target="_self"  class="has-text-weight-semibold" style="margin-left:10rem">
+                    <svg aria-hidden="true" data-prefix="fab" data-icon="instagram" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" size="lg" class="icon svg-inline--fa fa-instagram fa-w-14 fa-lg" data-v-253e0d12=""><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" class=""></path></svg> 
+                    <span class="is-size-6" data-v-253e0d12="">Instagram</span>
+                </a>
+        </div>
+    </footer> 
+    
+
+</body>
+
+</html>
